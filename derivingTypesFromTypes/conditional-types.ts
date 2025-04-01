@@ -37,3 +37,9 @@ function getFullName2<T extends object>(person: T): FullNameOrNothing<T>{
 //use case: If we want to get the return type of a particular function
 
 type GetReturnType<T> = T extends (...args:any[]) => infer RV ? RV : T;
+
+function func(a: number, b:number): number{
+    return a + b;
+}
+
+type RetREurnType = GetReturnType<typeof func>;

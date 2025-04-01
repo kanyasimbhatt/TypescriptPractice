@@ -1,5 +1,5 @@
 "use strict";
-//in function overloads we specify multiple function declaration where we can specify different return types for different types of output
+//in function overloads we specify multiple function declaration where we can specify different return types for different types of input passed
 function getLength(input) {
     if (typeof input === 'string') {
         let words = input.split(' ');
